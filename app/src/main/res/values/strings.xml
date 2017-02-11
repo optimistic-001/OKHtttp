@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">示例</string>
+    <string name="OKHttp_name">OKHtttp</string>
+    <string name="Sideslip_name">Sideslip</string>
+    <string name="action_settings">Settings</string>
+    <string name="Screenshot_name">截屏</string>
+    <string name="RxJava_name">RxJava</string>
+    <string name="Carousel_name">轮播器</string>
+    <string name="Weather_name">天气</string>
+    <string name="Share_name">友盟分享</string>
+    <string name="Sign_in_name">三方登录</string>
+
+    <string name="des_demo_loop">每3秒切换一次图片</string>
+    <string name="start_loop">开启轮询</string>
+    <string name="stop_loop">关闭轮询</string>
+
+</resources>

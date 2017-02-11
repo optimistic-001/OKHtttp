@@ -1,0 +1,28 @@
+<zhy:specialeffects.junjie.com.okhtttp.Sideslip.SlidingMenu
+    android:id="@+id/id_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/img_frame_background"
+    android:scrollbars="none"
+    zhy:rightPadding="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_menu"/>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="toggleMenu2"
+            android:background="@mipmap/qq">
+        </LinearLayout>
+    </LinearLayout>
+
+</zhy:specialeffects.junjie.com.okhtttp.Sideslip.SlidingMenu>

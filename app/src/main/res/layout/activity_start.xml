@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/but_okhttp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OKHttp_name"/>
+
+    <Button
+        android:id="@+id/but_Sideslip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sideslip_name"/>
+    <Button
+        android:id="@+id/but_Screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Screenshot_name"/>
+    <Button
+        android:id="@+id/but_RxJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RxJava_name"/>
+    <Button
+        android:id="@+id/but_Carousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Carousel_name"/>
+    <Button
+        android:id="@+id/but_Weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Weather_name"/>
+    <Button
+        android:id="@+id/but_Share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Share_name"/>
+    <Button
+        android:id="@+id/but_Sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sign_in_name"/>
+
+</LinearLayout>
