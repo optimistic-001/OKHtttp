@@ -16,10 +16,9 @@ import specialeffects.junjie.com.okhtttp.Sideslip.util.L;
 
 public class App extends Application {
     {
-//        PlatformConfig.setWeixin("wx967daebe835fbeac", "5bb696d9ccd75a38c8a0bfe0675559b3");
-        PlatformConfig.setSinaWeibo("3033624042", "c9a2499883c88623b38203e4593e43d3");
+        PlatformConfig.setWeixin("wxba8b00ce84191c93", "40d2728fbb4a3a749ce166a1af914830");
+        PlatformConfig.setSinaWeibo("3033624042", "c9a2499883c88623b38203e4593e43d3","https://api.weibo.com/oauth2/default.html");
         PlatformConfig.setQQZone("1105979962", "a6EHkLmTgkbwnEgg");
-        Config.REDIRECT_URL = "http://sns.whalecloud.com/sina2/callback";
     }
 
     @Override
@@ -41,5 +40,6 @@ public class App extends Application {
             }
         });
         UMShareAPI.get(this);
+        Config.DEBUG = true;
     }
 }

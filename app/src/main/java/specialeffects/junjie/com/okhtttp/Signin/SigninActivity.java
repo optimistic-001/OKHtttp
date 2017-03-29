@@ -1,12 +1,12 @@
 package specialeffects.junjie.com.okhtttp.Signin;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.trello.rxlifecycle.components.RxActivity;
-import com.umeng.socialize.Config;
 import com.umeng.socialize.UMAuthListener;
 import com.umeng.socialize.UMShareAPI;
 import com.umeng.socialize.bean.SHARE_MEDIA;
@@ -27,6 +27,7 @@ import specialeffects.junjie.com.okhtttp.Sideslip.util.L;
 
 public class SigninActivity extends RxActivity {
     private UMShareAPI mShareAPI;
+    private Context mContext;
     @Bind(R.id.media)
     TextView media;
     @Bind(R.id.name)
@@ -37,6 +38,7 @@ public class SigninActivity extends RxActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
         ButterKnife.bind(this);
+        mContext = SigninActivity.this;
         media.setText("未知:");
         name.setText("未知");
         mShareAPI = UMShareAPI.get(this);
@@ -64,24 +66,18 @@ public class SigninActivity extends RxActivity {
 //        Config.DEBUG = true;
 //    }
 
-    @OnClick(R.id.Sina_login)
-    void signinSina_login() {
-        mShareAPI.getPlatformInfo(SigninActivity.this, SHARE_MEDIA.SINA, umAuthListener);
-        Config.DEBUG = true;
-    }
-
-    @OnClick(R.id.Sina_Cancel)
-    void signinSina_Cancel() {
-        mShareAPI.deleteOauth(SigninActivity.this, SHARE_MEDIA.SINA, umAuthListener);
-    }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         mShareAPI.onActivityResult(requestCode, resultCode, data);
     }
 
-    private UMAuthListener umAuthListener = new UMAuthListener() {
+    public UMAuthListener umAuthListener = new UMAuthListener() {
+        @Override
+        public void onStart(SHARE_MEDIA share_media) {
+
+        }
+
         @Override
         public void onComplete(SHARE_MEDIA platform, int action, Map<String, String> data) {
             if (action == 2)
@@ -110,6 +106,11 @@ public class SigninActivity extends RxActivity {
             @Override
             public void onError(SHARE_MEDIA arg0, int arg1, Throwable arg2) {
                 // TODO Auto-generated method stub
+            }
+
+            @Override
+            public void onStart(SHARE_MEDIA share_media) {
+
             }
 
             @Override

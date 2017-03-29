@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/token_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_sso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSO授权"/>
+    <Button
+        android:id="@+id/btn_weibo_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微博分享"/>
+    <specialeffects.junjie.com.okhtttp.weibo.widget.LoginoutButton
+        android:id="@+id/login_out_button_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/com_sina_weibo_sdk_loginview_default_style" />
+    <TextView
+        android:id="@+id/token_text_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

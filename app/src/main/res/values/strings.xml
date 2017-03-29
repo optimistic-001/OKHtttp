@@ -10,6 +10,21 @@
     <string name="Share_name">友盟分享</string>
     <string name="Sign_in_name">三方登录</string>
 
+    <string name="com_sina_weibo_sdk_login_with_weibo_account">用微博登录</string>
+    <string name="com_sina_weibo_sdk_login">登录</string>
+    <string name="com_sina_weibo_sdk_logout">注销</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="weibosdk_demo_logout_success">已注销</string>
+    <string name="weibosdk_demo_logout_failed">注销失败</string>
+
     <string name="des_demo_loop">每3秒切换一次图片</string>
     <string name="start_loop">开启轮询</string>
     <string name="stop_loop">关闭轮询</string>

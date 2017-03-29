@@ -23,17 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="微信注销"/>
-    <Button
-        android:id="@+id/Sina_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="微博登录"/>
-    <Button
-        android:id="@+id/Sina_Cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="微博注销"/>
-
     <TextView
         android:id="@+id/media"
         android:layout_width="wrap_content"

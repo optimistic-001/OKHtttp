@@ -33,6 +33,7 @@
         <activity android:name=".Weather.WeatherActivity2"></activity>
         <activity android:name=".Share.ShareActivity"></activity>
         <activity android:name=".Signin.SigninActivity"></activity>
+        <activity android:name=".weibo.WBAuthActivity"></activity>
 
         //新浪微博
         <activity
@@ -50,8 +51,6 @@
             android:windowSoftInputMode="adjustResize"
             android:exported="false" >
         </activity>
-        <!--<service android:name="com.sina.weibo.sdk.net.DownloadService"-->
-                 <!--android:exported="false"></service>-->
         //QQ
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -73,7 +72,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize"/>
         //微信
         <activity
-            android:name=".Share.WXEntryActivity"
+            android:name=".wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
